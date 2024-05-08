@@ -15,13 +15,13 @@
     in {
       nixosConfigurations = {
         nixos = lib.nixosSystem {
-          modules = [ ./configuration.nix ];
+          modules = [ ./profiles/homelab/configuration.nix ];
         };
       };
       homeConfigurations = {
         n8 = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ];
+          modules = [ ./profiles/homelab/home.nix ];
         };
       };
     };
