@@ -1,15 +1,15 @@
 { pkgs, ... }:
 
 {
-    programs.neovim = {
-    	enable = true;
+		programs.neovim = {
+			enable = true;
 
 	viAlias = true;
 	vimAlias = true;
 	vimdiffAlias = true;
 
 	extraLuaConfig = ''
-	    ${builtins.readFile ./options.lua}
+			${builtins.readFile ./options.lua}
 	'';
-    };
+		};
 }
