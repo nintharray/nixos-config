@@ -14,14 +14,21 @@
 			pkgs = nixpkgs.legacyPackages.${system};
 		in {
 			nixosConfigurations = {
-				nixos = lib.nixosSystem {
+				homelab = lib.nixosSystem {
 					modules = [ ./profiles/homelab/configuration.nix ];
+				};
+				t430 = lib.nixosSystem {
+					modules = [ ./profiles/t430/configuration.nix ];
 				};
 			};
 			homeConfigurations = {
-				n8 = home-manager.lib.homeManagerConfiguration {
+				homelab = home-manager.lib.homeManagerConfiguration {
 					inherit pkgs;
 					modules = [ ./profiles/homelab/home.nix ];
+				};
+				t430 = home-manager.lib.homeManagerConfiguration {
+					inherit pkgs;
+					modules = [ ./profiles/t430/home.nix ];
 				};
 			};
 		};
