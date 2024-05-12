@@ -1,9 +1,5 @@
 { config, pkgs, ... }:
-let
-	aliases = {
-		vim = "nvim";
-	};
-in
+
 {
 	home.username = "n8";
 	home.homeDirectory = "/home/n8";
@@ -19,6 +15,7 @@ in
 
 	imports = [
 		../../user/cliPrograms/nvim/nvim.nix
+    ../../user/cliPrograms/shells/shells.nix
 	];
 
 	# The home.packages option allows you to install Nix packages into your
@@ -73,7 +70,6 @@ in
 	# Let Home Manager install and manage itself.
 	programs.home-manager.enable = true;
 
-
 	programs.git = {
 		enable = true;
 		userName = "nintharray";
@@ -81,10 +77,5 @@ in
     extraConfig = {
       init.defaultBranch = "main";
     };
-	};
-
-	programs.bash = {
-		enable = true;
-		shellAliases = aliases;
 	};
 }
