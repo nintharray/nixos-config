@@ -13,8 +13,12 @@
     config = {
       modifier = "Mod4";
       gaps = {
-        inner = 10;
-        outer = 5;
+        inner = 4;
+        outer = 2;
+      };
+      window = {
+        border = 0;
+        titlebar = false;
       };
     };
   };
