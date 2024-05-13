@@ -23,6 +23,7 @@ in
       id = 0;
       name = "my profile";
       extensions = with inputs.firefox-addons.packages."x86_64-linux"; [
+        multi-account-containers
         bitwarden
         clearurls
         decentraleyes
@@ -32,6 +33,62 @@ in
         sponsorblock
         youtube-shorts-block
       ];
+      containers = {
+
+        YouTube = {
+          color = "red";
+          icon = "chill";
+          id = 1;
+        };
+
+        Uni = {
+          color = "blue";
+          icon = "circle";
+          id = 2;
+        };
+
+        Shopping = {
+          color = "yellow";
+          icon = "cart";
+          id = 3;
+        };
+
+        Google = {
+          color = "green";
+          icon = "fingerprint";
+          id = 4;
+        };
+
+        Discord = {
+          color = "purple";
+          icon = "circle";
+          id = 5;
+        };
+
+        Finance = {
+          color = "pink";
+          icon = "dollar";
+          id = 6;
+        };
+
+        GitHub = {
+          color = "green";
+          icon = "vacation";
+          id = 7;
+        };
+
+        LinkedIn = {
+          color = "blue";
+          icon = "briefcase";
+          id = 8;
+        };
+
+        Work = {
+          color = "green";
+          icon = "briefcase";
+          id = 9;
+        };
+      };
       bookmarks = [
         {
           name = "YouTube";
@@ -100,9 +157,6 @@ in
         # disable picture-in-picture popup
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
       };
-    };
-    policies = {
-      NoDefaultBookmarks = true;
     };
   };
 }
