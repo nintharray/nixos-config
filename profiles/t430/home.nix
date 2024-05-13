@@ -22,6 +22,7 @@ in
 		../../user/cliPrograms/shells/shells.nix
 
     ../../user/guiPrograms/wm/xorg/i3/i3.nix
+    ../../user/guiPrograms/browsers/firefox/firefox.nix
 	];
 
 	# The home.packages option allows you to install Nix packages into your
