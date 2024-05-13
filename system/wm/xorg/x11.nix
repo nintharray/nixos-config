@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ../pipewire.nix
+  ];
+
   services.xserver = {
     enable = true;
     layout = "us";
