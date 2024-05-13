@@ -20,6 +20,7 @@ in
 	imports = [
 		../../user/cliPrograms/nvim/nvim.nix
 		../../user/cliPrograms/shells/shells.nix
+		../../user/cliPrograms/misc/misc.nix
 
     ../../user/guiPrograms/wm/xorg/i3/i3.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
