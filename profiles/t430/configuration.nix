@@ -4,6 +4,7 @@
 	imports =
 		[
 			./hardware-configuration.nix
+      ../../system/wm/xorg/i3.nix
 		];
 
 	# Bootloader.
