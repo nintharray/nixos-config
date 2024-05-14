@@ -32,6 +32,7 @@ in
         ublock-origin
         sponsorblock
         youtube-shorts-block
+        return-youtube-dislikes
       ];
       containers = {
 
