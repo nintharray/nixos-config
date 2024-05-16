@@ -76,6 +76,22 @@ in
 		# EDITOR = "emacs";
 	};
 
+  xdg = {
+    enable = true;
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+      music = "${config.home.homeDirectory}/media/music";
+      videos = "${config.home.homeDirectory}/media/videos";
+      pictures = "${config.home.homeDirectory}/media/images";
+      download = "${config.home.homeDirectory}/downloads";
+      documents = "${config.home.homeDirectory}/docs";
+      templates = null;
+      desktop = null;
+      publicShare = null;
+    };
+  };
+
 	# Let Home Manager install and manage itself.
 	programs.home-manager.enable = true;
 
