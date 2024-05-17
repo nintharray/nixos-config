@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ../../gtk-qt.nix
+  ];
+
   home.packages = with pkgs; [
     kitty
     dmenu
