@@ -76,7 +76,7 @@ in
 	#	/etc/profiles/per-user/n8/etc/profile.d/hm-session-vars.sh
 	#
 	home.sessionVariables = {
-		# EDITOR = "emacs";
+		EDITOR = "nvim";
 	};
 
   xdg = {
