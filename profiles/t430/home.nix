@@ -26,6 +26,7 @@ in
     ../../user/guiPrograms/browsers/firefox/firefox.nix
     ../../user/guiPrograms/term/kitty.nix
     ../../user/guiPrograms/video/video.nix
+    ../../user/guiPrograms/cad/cad.nix
 	];
 
 	# The home.packages option allows you to install Nix packages into your
