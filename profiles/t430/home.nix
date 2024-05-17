@@ -21,6 +21,7 @@ in
 		../../user/cliPrograms/nvim/nvim.nix
 		../../user/cliPrograms/shells/shells.nix
 		../../user/cliPrograms/misc/misc.nix
+		../../user/cliPrograms/git.nix
 
     ../../user/guiPrograms/wm/xorg/i3/i3.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
@@ -97,12 +98,4 @@ in
 	# Let Home Manager install and manage itself.
 	programs.home-manager.enable = true;
 
-	programs.git = {
-		enable = true;
-		userName = "nintharray";
-		userEmail = "167829823+nintharray@users.noreply.github.com";
-    extraConfig = {
-      init.defaultBranch = "main";
-    };
-	};
 }
