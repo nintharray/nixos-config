@@ -23,7 +23,7 @@ in
 		../../user/cliPrograms/misc/misc.nix
 		../../user/cliPrograms/git.nix
 
-    ../../user/guiPrograms/wm/xorg/i3/i3.nix
+    ../../user/guiPrograms/wm/wl/hyprland/hyprland.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
     ../../user/guiPrograms/term/kitty.nix
     ../../user/guiPrograms/video/video.nix
