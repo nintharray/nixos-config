@@ -27,13 +27,23 @@
     settings = {
       "$mod" = "SUPER";
       "$terminal" = "kitty";
-      bind =
-        [
-          "$mod, F, exec, firefox"
-          # ", Print, exec, grimblast copy area"
-          "$mod, Return, exec, $terminal"
-          "$mod SHIFT, E, exit"
-        ]
+      bind = [
+        "$mod, D, exec, wofi --show run"
+        # ", Print, exec, grimblast copy area"
+        "$mod, Return, exec, $terminal"
+        "$mod SHIFT, E, exit"
+        "$mod SHIFT, Q, killactive"
+
+        "$mod, h, movefocus, l"
+        "$mod, j, movefocus, d"
+        "$mod, k, movefocus, u"
+        "$mod, l, movefocus, r"
+
+        "$mod SHIFT, h, movewindow, l"
+        "$mod SHIFT, j, movewindow, d"
+        "$mod SHIFT, k, movewindow, u"
+        "$mod SHIFT, l, movewindow, r"
+      ]
         ++ (
           # workspaces
           # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}
@@ -50,6 +60,11 @@
             )
             10)
         );
+      bindm = [
+        # window control with left click
+        "$mod, mouse:272, movewindow"
+        "$mod SHIFT, mouse:272, resizewindow"
+      ];
       general = {
         gaps_in = 5;
         gaps_out = 10;
