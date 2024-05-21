@@ -3,6 +3,7 @@
 {
   imports = [
     ../waybar/waybar.nix
+    ../hyprpaper/hyprpaper.nix
     ../../gtk-qt.nix
   ];
 
@@ -85,6 +86,7 @@
     };
     extraConfig = ''
       exec-once=${pkgs.waybar}/bin/waybar
+      exec-once=${pkgs.hyprpaper}/bin/hyprpaper
     '';
   };
 }
