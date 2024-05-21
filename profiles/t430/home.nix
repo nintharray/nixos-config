@@ -28,6 +28,7 @@ in
     ../../user/guiPrograms/term/kitty.nix
     ../../user/guiPrograms/video/video.nix
     ../../user/guiPrograms/cad/cad.nix
+    ../../user/guiPrograms/misc.nix
 	];
 
 	# The home.packages option allows you to install Nix packages into your
