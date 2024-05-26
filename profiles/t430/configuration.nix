@@ -87,4 +87,12 @@
 	# Enable nix flakes.
 	nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Enable printing.
+  services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
+
 }
