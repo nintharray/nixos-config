@@ -66,6 +66,10 @@
         "$mod, mouse:272, movewindow"
         "$mod SHIFT, mouse:272, resizewindow"
       ];
+      bindl = [
+        '', switch:off:Lid Switch,exec,hyprctl keyword monitor "DP-1, 2560x1600, 0x0, 1"''
+        '', switch:on:Lid Switch,exec,hyprctl keyword monitor "DP-1, disable"''
+      ];
       general = {
         gaps_in = 5;
         gaps_out = 10;
@@ -76,6 +80,7 @@
         rounding = 10;
       };
       monitor = [
+        "DP-1, modeline 268.00 2560 2608 2640 2720 1600 1603 1609 1646 -hsync +vsync, 0x0, 1"
         ",preferred,auto,1"
       ];
       misc = {
