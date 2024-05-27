@@ -22,6 +22,7 @@ in
 		../../user/cliPrograms/shells/shells.nix
 		../../user/cliPrograms/misc/misc.nix
 		../../user/cliPrograms/git.nix
+		../../user/cliPrograms/lang/python/python.nix
 
     ../../user/guiPrograms/wm/wl/hyprland/hyprland.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
