@@ -3,8 +3,8 @@
 {
   home.packages = with pkgs; [
 
-    busybox
     vifm
+    unzip
 
   ];
 }
