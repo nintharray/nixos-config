@@ -23,6 +23,7 @@ in
 		../../user/cliPrograms/misc/misc.nix
 		../../user/cliPrograms/git.nix
 		../../user/cliPrograms/lang/python/python.nix
+		../../user/cliPrograms/lang/c-cpp/c-cpp.nix
 
     ../../user/guiPrograms/wm/wl/hyprland/hyprland.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
