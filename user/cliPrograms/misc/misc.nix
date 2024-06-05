@@ -5,6 +5,7 @@
 
     vifm
     unzip
+    usbutils
 
   ];
 }
