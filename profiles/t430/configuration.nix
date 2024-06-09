@@ -5,6 +5,7 @@
 		[
 			./hardware-configuration.nix
       ../../system/wm/wl/hyprland/hyprland.nix
+      ../../system/syncthing/syncthing.nix
 		];
 
 	# Bootloader.
