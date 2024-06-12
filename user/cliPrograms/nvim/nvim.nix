@@ -7,6 +7,11 @@
 			viAlias = true;
 			vimAlias = true;
 			vimdiffAlias = true;
+
+      extraConfig = 
+      ''
+        autocmd FileType tex let maplocalleader = ","
+      '';
 		
 			extraPackages = with pkgs; [
 				fzf
@@ -81,6 +86,16 @@
 				}
 
 				vim-nix
+
+        {
+          plugin = vimtex;
+          config = 
+          ''
+            let g:tex_flavor='latex'
+            let g:vimtex_view_method='zathura'
+            let g:vimtex_quickfix_mode=0
+          '';
+        }
 
 			];
 		
