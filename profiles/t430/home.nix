@@ -31,6 +31,7 @@ in
     ../../user/guiPrograms/video/video.nix
     ../../user/guiPrograms/cad/cad.nix
     ../../user/guiPrograms/misc.nix
+    ../../user/guiPrograms/games/minecraft/minecraft.nix
 	];
 
 	# The home.packages option allows you to install Nix packages into your
