@@ -29,7 +29,8 @@ in
     ../../user/guiPrograms/browsers/firefox/firefox.nix
     ../../user/guiPrograms/term/kitty.nix
     ../../user/guiPrograms/video/video.nix
-    ../../user/guiPrograms/cad/cad.nix
+    ../../user/guiPrograms/3d/cad.nix
+    ../../user/guiPrograms/3d/super-slicer/super-slicer.nix
     ../../user/guiPrograms/misc.nix
     ../../user/guiPrograms/games/minecraft/minecraft.nix
 	];
