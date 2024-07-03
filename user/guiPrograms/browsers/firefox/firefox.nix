@@ -33,6 +33,8 @@ in
         sponsorblock
         youtube-shorts-block
         return-youtube-dislikes
+        istilldontcareaboutcookies
+        remove-youtube-s-suggestions
       ];
       bookmarks = [
         {
