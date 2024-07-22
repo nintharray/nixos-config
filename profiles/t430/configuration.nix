@@ -96,4 +96,7 @@
     openFirewall = true;
   };
 
+  # xdg fix for logseq
+  xdg.portal.enable = true;
+
 }
