@@ -16,7 +16,7 @@ in
     shellAliases = aliases;
 
     enableCompletion = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     defaultKeymap = "viins";
     history.share = false;
