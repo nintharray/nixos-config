@@ -4,6 +4,7 @@
   imports = [
     ../waybar/waybar.nix
     ../hyprpaper/hyprpaper.nix
+    ../hyprlock/hyprlock.nix
     ../../gtk-qt.nix
   ];
 
