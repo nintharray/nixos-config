@@ -25,6 +25,7 @@ in
 		../../user/cliPrograms/lang/python/python.nix
 		../../user/cliPrograms/lang/c-cpp/c-cpp.nix
 		../../user/cliPrograms/lang/latex/texlive.nix
+		../../user/cliPrograms/lang/js/node.nix
 
     ../../user/guiPrograms/wm/wl/hyprland/hyprland.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
