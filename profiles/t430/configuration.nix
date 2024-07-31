@@ -6,6 +6,7 @@
 			./hardware-configuration.nix
       ../../system/wm/wl/hyprland/hyprland.nix
       ../../system/syncthing/syncthing.nix
+      ../../system/fonts.nix
 		];
 
 	# Bootloader.
@@ -51,12 +52,6 @@
 	git
 	neovim
 	];
-
-  fonts.packages = with pkgs; [
-    font-awesome
-    material-design-icons
-    nerdfonts
-  ];
 
 	# Some programs need SUID wrappers, can be configured further or are
 	# started in user sessions.
