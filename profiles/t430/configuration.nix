@@ -94,4 +94,9 @@
   # xdg fix for logseq
   xdg.portal.enable = true;
 
+  services.udev.packages = with pkgs; [
+    platformio-core
+    openocd
+  ];
+
 }

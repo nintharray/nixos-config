@@ -6,5 +6,6 @@
     gcc
     gcc-arm-embedded-13
     gnumake
+    platformio
   ];
 }
