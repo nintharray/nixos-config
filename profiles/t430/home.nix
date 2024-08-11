@@ -29,6 +29,7 @@ in
 
     ../../user/guiPrograms/wm/wl/hyprland/hyprland.nix
     ../../user/guiPrograms/browsers/firefox/firefox.nix
+    ../../user/guiPrograms/browsers/chromium/chromium.nix
     ../../user/guiPrograms/term/kitty.nix
     ../../user/guiPrograms/video/video.nix
     ../../user/guiPrograms/3d/cad.nix
