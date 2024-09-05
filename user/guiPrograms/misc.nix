@@ -5,6 +5,7 @@
     audacious
     gimp
     logseq
+    vesktop
     xdg-desktop-portal-gtk
     zathura
   ];
