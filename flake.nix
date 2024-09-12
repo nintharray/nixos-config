@@ -25,6 +25,9 @@
 				t430 = lib.nixosSystem {
 					modules = [ ./profiles/t430/configuration.nix ];
 				};
+				gazelle = lib.nixosSystem {
+					modules = [ ./profiles/gazelle/configuration.nix ];
+				};
 			};
 			homeConfigurations = {
 				homelab = home-manager.lib.homeManagerConfiguration {
@@ -33,8 +36,13 @@
 				};
 				t430 = home-manager.lib.homeManagerConfiguration {
 					inherit pkgs;
-          extraSpecialArgs = { inherit inputs; };
+          				extraSpecialArgs = { inherit inputs; };
 					modules = [ ./profiles/t430/home.nix ];
+				};
+				gazelle = home-manager.lib.homeManagerConfiguration {
+					inherit pkgs;
+          				extraSpecialArgs = { inherit inputs; };
+					modules = [ ./profiles/gazelle/home.nix ];
 				};
 			};
 		};
