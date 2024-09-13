@@ -89,6 +89,7 @@
         force_default_wallpaper = 0;
         vfr = true;
       };
+      input.touchpad.natural_scroll = true;
     };
     extraConfig = ''
       exec-once=${pkgs.waybar}/bin/waybar
