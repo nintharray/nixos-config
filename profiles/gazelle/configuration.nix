@@ -40,7 +40,7 @@
 	users.users.n8 = {
 		isNormalUser = true;
 		description = "";
-		extraGroups = [ "networkmanager" "wheel" ];
+		extraGroups = [ "networkmanager" "wheel" "dialout" ];
 		packages = with pkgs; [];
 	};
 
