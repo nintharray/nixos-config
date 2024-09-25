@@ -96,4 +96,7 @@
       exec-once=${pkgs.hyprpaper}/bin/hyprpaper
     '';
   };
+
+  services.mako.enable = true;
+
 }
