@@ -31,6 +31,7 @@ in
     ../../user/guiPrograms/browsers/firefox/firefox.nix
     ../../user/guiPrograms/browsers/chromium/chromium.nix
     ../../user/guiPrograms/term/kitty.nix
+    ../../user/guiPrograms/productivity/thunderbird.nix
     ../../user/guiPrograms/video/video.nix
     ../../user/guiPrograms/3d/cad.nix
     ../../user/guiPrograms/3d/super-slicer/super-slicer.nix
