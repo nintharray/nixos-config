@@ -5,6 +5,7 @@
     audacious
     filelight
     gimp
+    obs-studio
     obsidian
     postman
     vesktop
