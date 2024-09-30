@@ -123,8 +123,17 @@
   };
 
   # bluetooth
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    disabledPlugins = [ "avrcp" ];
+    settings = {
+      General = {
+        ControllerMode = "bredr";
+        Enable = "Source,Sink,Media,Socket";
+      };
+    };
+  };
   services.blueman.enable = true;
 
 }
