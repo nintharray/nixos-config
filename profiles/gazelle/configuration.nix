@@ -7,6 +7,7 @@
       ../../system/wm/wl/hyprland/hyprland.nix
       ../../system/syncthing/syncthing.nix
       ../../system/fonts.nix
+      ../../system/android.nix
 		];
 
 	# Bootloader.
