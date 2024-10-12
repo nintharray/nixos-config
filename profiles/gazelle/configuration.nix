@@ -51,6 +51,7 @@
 	environment.systemPackages = with pkgs; [
 	git
 	neovim
+  (callPackage ../../system/cursor.nix {})
 	];
 
 	# Some programs need SUID wrappers, can be configured further or are
